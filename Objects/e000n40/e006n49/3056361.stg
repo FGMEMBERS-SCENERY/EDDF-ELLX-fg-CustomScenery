@@ -1,0 +1,12 @@
+#country:LUX
+#submitter: E. van den Berg
+#desc: objects for ELLX airport
+
+#ELU
+OBJECT_SHARED Models/Airport/ndb.xml 6.355 49.68 252.95 180
+OBJECT_SHARED Models/Power/windturbine.xml 6.4786111 49.626111 360 180
+OBJECT_SHARED Models/Power/windturbine.xml 6.4794444 49.6275 362 180
+OBJECT_SHARED Models/Power/windturbine.xml 6.4808333 49.629444 357 180
+OBJECT_SHARED Models/Power/windturbine.xml 6.4816667 49.630833 351 180
+OBJECT_SHARED Models/Power/windturbine.xml 6.4838889 49.629167 358 180
+OBJECT_SHARED Models/Power/windturbine.xml 6.4872222 49.628889 389 180

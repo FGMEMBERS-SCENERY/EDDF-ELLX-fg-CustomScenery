@@ -1,0 +1,548 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>ELLX_grayhanger.ac</path>
+
+<nasal>
+   <load>
+   print("LOAD ELLX_grayhanger.xml");
+   if (!contains(globals, "scenery")) globals["scenery"] = {};
+   if (!contains(scenery, "ELLX")) scenery["ELLX"] = {};
+   if (!contains(scenery.ELLX, "hangar")) scenery.ELLX["hangar"] = {};
+   if (contains(scenery, "sharedDoor")) {
+     scenery.ELLX.hangar[2] =
+       { door :
+         [scenery.sharedDoor.new("/scenery/ELLX/hangar[2]/door[0]", 10),
+          scenery.sharedDoor.new("/scenery/ELLX/hangar[2]/door[1]", 20),
+          scenery.sharedDoor.new("/scenery/ELLX/hangar[2]/door[2]", 30),
+          scenery.sharedDoor.new("/scenery/ELLX/hangar[2]/door[3]", 30),
+          scenery.sharedDoor.new("/scenery/ELLX/hangar[2]/door[4]", 20),
+          scenery.sharedDoor.new("/scenery/ELLX/hangar[2]/door[5]", 10),
+          scenery.sharedDoor.new("/scenery/ELLX/hangar[2]/door[6]", 10),
+          scenery.sharedDoor.new("/scenery/ELLX/hangar[2]/door[7]", 20),
+          scenery.sharedDoor.new("/scenery/ELLX/hangar[2]/door[8]", 30),
+          scenery.sharedDoor.new("/scenery/ELLX/hangar[2]/door[9]", 40),
+          scenery.sharedDoor.new("/scenery/ELLX/hangar[2]/door[10]", 40),
+          scenery.sharedDoor.new("/scenery/ELLX/hangar[2]/door[11]", 30),
+          scenery.sharedDoor.new("/scenery/ELLX/hangar[2]/door[12]", 20),
+          scenery.sharedDoor.new("/scenery/ELLX/hangar[2]/door[13]", 10)
+         ]
+       };
+   } else {
+     scenery.ELLX.hangar[2] =
+       { door :
+         [aircraft.door.new("/scenery/ELLX/hangar[2]/door[0]", 10),
+          aircraft.door.new("/scenery/ELLX/hangar[2]/door[1]", 20),
+          aircraft.door.new("/scenery/ELLX/hangar[2]/door[2]", 30),
+          aircraft.door.new("/scenery/ELLX/hangar[2]/door[3]", 30),
+          aircraft.door.new("/scenery/ELLX/hangar[2]/door[4]", 20),
+          aircraft.door.new("/scenery/ELLX/hangar[2]/door[5]", 10),
+          aircraft.door.new("/scenery/ELLX/hangar[2]/door[6]", 10),
+          aircraft.door.new("/scenery/ELLX/hangar[2]/door[7]", 20),
+          aircraft.door.new("/scenery/ELLX/hangar[2]/door[8]", 30),
+          aircraft.door.new("/scenery/ELLX/hangar[2]/door[9]", 40),
+          aircraft.door.new("/scenery/ELLX/hangar[2]/door[10]", 40),
+          aircraft.door.new("/scenery/ELLX/hangar[2]/door[11]", 30),
+          aircraft.door.new("/scenery/ELLX/hangar[2]/door[12]", 20),
+          aircraft.door.new("/scenery/ELLX/hangar[2]/door[13]", 10)
+         ]
+       };
+   }
+  </load>
+  <unload>
+   if (contains(scenery, "sharedDoor")) {
+     scenery.ELLX.hangar[2].door[0].destroy();
+     scenery.ELLX.hangar[2].door[1].destroy();
+     scenery.ELLX.hangar[2].door[2].destroy();
+     scenery.ELLX.hangar[2].door[3].destroy();
+     scenery.ELLX.hangar[2].door[4].destroy();
+     scenery.ELLX.hangar[2].door[5].destroy();
+     scenery.ELLX.hangar[2].door[6].destroy();
+     scenery.ELLX.hangar[2].door[7].destroy();
+     scenery.ELLX.hangar[2].door[8].destroy();
+     scenery.ELLX.hangar[2].door[9].destroy();
+     scenery.ELLX.hangar[2].door[10].destroy();
+     scenery.ELLX.hangar[2].door[11].destroy();
+     scenery.ELLX.hangar[2].door[12].destroy();
+     scenery.ELLX.hangar[2].door[13].destroy();
+   }
+  </unload>
+</nasal>
+
+  <animation>
+    <type>material</type>
+    <object-name>windows</object-name>
+    <condition>
+      <greater-than>
+        <property>/sim/time/sun-angle-rad</property>
+        <value>1.50</value>
+      </greater-than>
+    </condition>
+    <emission>
+      <red>   0.3 </red>
+      <green> 0.3 </green>
+      <blue>  0.3 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>windows</object-name>
+    <condition>
+      <less-than-equals>
+        <property>/sim/time/sun-angle-rad</property>
+        <value>1.50</value>
+      </less-than-equals>
+    </condition>
+    <emission>
+      <red>   0.0 </red>
+      <green> 0.0 </green>
+      <blue>  0.0 </blue>
+    </emission>
+  </animation>
+
+	<animation>
+		<type>translate</type>
+		<object-name>door1</object-name>
+			<property>/scenery/ELLX/hangar[2]/door[0]/position-norm</property>
+			<factor>1</factor>
+			<interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+            <entry><ind> 1.0 </ind><dep>  8.0 </dep></entry>
+			</interpolation>
+			<axis>
+				<x>1</x>
+				<y>0</y>
+				<z>0</z>
+			</axis>
+	</animation>
+	<animation>
+		<type>translate</type>
+		<object-name>door2</object-name>
+			<property>/scenery/ELLX/hangar[2]/door[1]/position-norm</property>
+			<factor>1</factor>
+			<interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+            <entry><ind> 1.0 </ind><dep>  16.0 </dep></entry>
+			</interpolation>
+			<axis>
+				<x>1</x>
+				<y>0</y>
+				<z>0</z>
+			</axis>
+	</animation>
+	<animation>
+		<type>translate</type>
+		<object-name>door3</object-name>
+			<property>/scenery/ELLX/hangar[2]/door[2]/position-norm</property>
+			<factor>1</factor>
+			<interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+            <entry><ind> 1.0 </ind><dep>  24.0 </dep></entry>
+			</interpolation>
+			<axis>
+				<x>1</x>
+				<y>0</y>
+				<z>0</z>
+			</axis>
+	</animation>
+
+	<animation>
+		<type>translate</type>
+		<object-name>door4</object-name>
+			<property>/scenery/ELLX/hangar[2]/door[3]/position-norm</property>
+			<factor>1</factor>
+			<interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+            <entry><ind> 1.0 </ind><dep>  24.0 </dep></entry>
+			</interpolation>
+			<axis>
+				<x>-1</x>
+				<y>0</y>
+				<z>0</z>
+			</axis>
+	</animation>
+	<animation>
+		<type>translate</type>
+		<object-name>door5</object-name>
+			<property>/scenery/ELLX/hangar[2]/door[4]/position-norm</property>
+			<factor>1</factor>
+			<interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+            <entry><ind> 1.0 </ind><dep>  16.0 </dep></entry>
+			</interpolation>
+			<axis>
+				<x>-1</x>
+				<y>0</y>
+				<z>0</z>
+			</axis>
+	</animation>
+	<animation>
+		<type>translate</type>
+		<object-name>door6</object-name>
+			<property>/scenery/ELLX/hangar[2]/door[5]/position-norm</property>
+			<factor>1</factor>
+			<interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+            <entry><ind> 1.0 </ind><dep>  8.0 </dep></entry>
+			</interpolation>
+			<axis>
+				<x>-1</x>
+				<y>0</y>
+				<z>0</z>
+			</axis>
+	</animation>
+	<animation>
+		<type>translate</type>
+		<object-name>door7</object-name>
+			<property>/scenery/ELLX/hangar[2]/door[6]/position-norm</property>
+			<factor>1</factor>
+			<interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+            <entry><ind> 1.0 </ind><dep>  6.0 </dep></entry>
+			</interpolation>
+			<axis>
+				<x>1</x>
+				<y>0</y>
+				<z>0</z>
+			</axis>
+	</animation>
+	<animation>
+		<type>translate</type>
+		<object-name>door8</object-name>
+			<property>/scenery/ELLX/hangar[2]/door[7]/position-norm</property>
+			<factor>1</factor>
+			<interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+            <entry><ind> 1.0 </ind><dep>  12.0 </dep></entry>
+			</interpolation>
+			<axis>
+				<x>1</x>
+				<y>0</y>
+				<z>0</z>
+			</axis>
+	</animation>
+	<animation>
+		<type>translate</type>
+		<object-name>door9</object-name>
+			<property>/scenery/ELLX/hangar[2]/door[8]/position-norm</property>
+			<factor>1</factor>
+			<interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+            <entry><ind> 1.0 </ind><dep>  18.0 </dep></entry>
+			</interpolation>
+			<axis>
+				<x>1</x>
+				<y>0</y>
+				<z>0</z>
+			</axis>
+	</animation>
+	<animation>
+		<type>translate</type>
+		<object-name>door10</object-name>
+			<property>/scenery/ELLX/hangar[2]/door[9]/position-norm</property>
+			<factor>1</factor>
+			<interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+            <entry><ind> 1.0 </ind><dep>  24.0 </dep></entry>
+			</interpolation>
+			<axis>
+				<x>1</x>
+				<y>0</y>
+				<z>0</z>
+			</axis>
+	</animation>
+	<animation>
+		<type>translate</type>
+		<object-name>door11</object-name>
+			<property>/scenery/ELLX/hangar[2]/door[10]/position-norm</property>
+			<factor>1</factor>
+			<interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+            <entry><ind> 1.0 </ind><dep>  24.0 </dep></entry>
+			</interpolation>
+			<axis>
+				<x>-1</x>
+				<y>0</y>
+				<z>0</z>
+			</axis>
+	</animation>
+	<animation>
+		<type>translate</type>
+		<object-name>door12</object-name>
+			<property>/scenery/ELLX/hangar[2]/door[11]/position-norm</property>
+			<factor>1</factor>
+			<interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+            <entry><ind> 1.0 </ind><dep>  18.0 </dep></entry>
+			</interpolation>
+			<axis>
+				<x>-1</x>
+				<y>0</y>
+				<z>0</z>
+			</axis>
+	</animation>
+	<animation>
+		<type>translate</type>
+		<object-name>door13</object-name>
+			<property>/scenery/ELLX/hangar[2]/door[12]/position-norm</property>
+			<factor>1</factor>
+			<interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+            <entry><ind> 1.0 </ind><dep>  12.0 </dep></entry>
+			</interpolation>
+			<axis>
+				<x>-1</x>
+				<y>0</y>
+				<z>0</z>
+			</axis>
+	</animation>
+	<animation>
+		<type>translate</type>
+		<object-name>door14</object-name>
+			<property>/scenery/ELLX/hangar[2]/door[13]/position-norm</property>
+			<factor>1</factor>
+			<interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+            <entry><ind> 1.0 </ind><dep>  6.0 </dep></entry>
+			</interpolation>
+			<axis>
+				<x>-1</x>
+				<y>0</y>
+				<z>0</z>
+			</axis>
+	</animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>door1</object-name>
+  <visible>true</visible>
+  <action>
+   <name>click</name>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>
+            scenery.ELLX.hangar[2].door[0].toggle();
+    </script>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>door2</object-name>
+  <visible>true</visible>
+  <action>
+   <name>click</name>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>
+            scenery.ELLX.hangar[2].door[1].toggle();
+    </script>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>door3</object-name>
+  <visible>true</visible>
+  <action>
+   <name>click</name>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>
+            scenery.ELLX.hangar[2].door[2].toggle();
+    </script>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>door4</object-name>
+  <visible>true</visible>
+  <action>
+   <name>click</name>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>
+            scenery.ELLX.hangar[2].door[3].toggle();
+    </script>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>door5</object-name>
+  <visible>true</visible>
+  <action>
+   <name>click</name>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>
+            scenery.ELLX.hangar[2].door[4].toggle();
+    </script>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>door6</object-name>
+  <visible>true</visible>
+  <action>
+   <name>click</name>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>
+            scenery.ELLX.hangar[2].door[5].toggle();
+    </script>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>door7</object-name>
+  <visible>true</visible>
+  <action>
+   <name>click</name>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>
+            scenery.ELLX.hangar[2].door[6].toggle();
+    </script>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>door8</object-name>
+  <visible>true</visible>
+  <action>
+   <name>click</name>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>
+            scenery.ELLX.hangar[2].door[7].toggle();
+    </script>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>door9</object-name>
+  <visible>true</visible>
+  <action>
+   <name>click</name>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>
+            scenery.ELLX.hangar[2].door[8].toggle();
+    </script>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>door10</object-name>
+  <visible>true</visible>
+  <action>
+   <name>click</name>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>
+            scenery.ELLX.hangar[2].door[9].toggle();
+    </script>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>door11</object-name>
+  <visible>true</visible>
+  <action>
+   <name>click</name>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>
+            scenery.ELLX.hangar[2].door[10].toggle();
+    </script>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>door12</object-name>
+  <visible>true</visible>
+  <action>
+   <name>click</name>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>
+            scenery.ELLX.hangar[2].door[11].toggle();
+    </script>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>door13</object-name>
+  <visible>true</visible>
+  <action>
+   <name>click</name>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>
+            scenery.ELLX.hangar[2].door[12].toggle();
+    </script>
+   </binding>
+  </action>
+ </animation>
+ <animation>
+  <type>pick</type>
+  <object-name>door14</object-name>
+  <visible>true</visible>
+  <action>
+   <name>click</name>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>
+            scenery.ELLX.hangar[2].door[13].toggle();
+    </script>
+   </binding>
+  </action>
+ </animation>
+
+  <animation>
+    <type>range</type>
+    <min-m>0</min-m>
+    <max-property>sim/rendering/static-lod/bare</max-property>
+  </animation>
+
+</PropertyList>

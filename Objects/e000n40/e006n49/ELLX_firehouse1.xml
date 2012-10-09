@@ -1,0 +1,975 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>ELLX_firehouse1.ac</path>
+
+<nasal>
+   <load>
+   print("LOAD ELLX_firehouse1.xml");
+   if (!contains(globals, "scenery")) globals["scenery"] = {};
+   if (!contains(scenery, "ELLX")) scenery["ELLX"] = {};
+   if (!contains(scenery.ELLX, "hangar")) scenery.ELLX["hangar"] = {};
+   if (contains(scenery, "sharedDoor")) {
+     scenery.ELLX.hangar[3] =
+       { door :
+         [scenery.sharedDoor.new("/scenery/ELLX/hangar[3]/door[0]", 15),
+          scenery.sharedDoor.new("/scenery/ELLX/hangar[3]/door[1]", 10),
+          scenery.sharedDoor.new("/scenery/ELLX/hangar[3]/door[2]", 10),
+          scenery.sharedDoor.new("/scenery/ELLX/hangar[3]/door[3]", 10),
+          scenery.sharedDoor.new("/scenery/ELLX/hangar[3]/door[4]", 10)
+          ]
+       };
+   } else {
+     scenery.ELLX.hangar[3] =
+       { door :
+         [aircraft.door.new("/scenery/ELLX/hangar[3]/door[0]", 15),  
+          aircraft.door.new("/scenery/ELLX/hangar[3]/door[1]", 10),
+          aircraft.door.new("/scenery/ELLX/hangar[3]/door[2]", 10),
+          aircraft.door.new("/scenery/ELLX/hangar[3]/door[3]", 10),
+          aircraft.door.new("/scenery/ELLX/hangar[3]/door[4]", 10)        
+          ]
+       };
+   }
+  </load>
+  <unload>
+   if (contains(scenery, "sharedDoor")) {
+     scenery.ELLX.hangar[3].door[0].destroy();
+     scenery.ELLX.hangar[3].door[1].destroy();
+     scenery.ELLX.hangar[3].door[2].destroy();
+     scenery.ELLX.hangar[3].door[3].destroy();
+     scenery.ELLX.hangar[3].door[4].destroy();
+   }
+  </unload>
+</nasal>
+
+	<animation>
+		<type>translate</type>
+		<object-name>door1</object-name>
+			<property>/scenery/ELLX/hangar[3]/door[0]/position-norm</property>
+			<factor>1</factor>
+			<interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+            <entry><ind> 0.5 </ind><dep>  1.0 </dep></entry>
+            <entry><ind> 1.0 </ind><dep>  1.0 </dep></entry>
+			</interpolation>
+			<axis>
+				<x>-1</x>
+				<y>0</y>
+				<z>0</z>
+			</axis>
+	</animation>
+	<animation>
+		<type>translate</type>
+		<object-name>door1</object-name>
+			<property>/scenery/ELLX/hangar[3]/door[0]/position-norm</property>
+			<factor>1</factor>
+			<interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+		<entry><ind> 0.1 </ind><dep>  0.6 </dep></entry>
+		<entry><ind> 0.2 </ind><dep>  0.8 </dep></entry>
+		<entry><ind> 0.3 </ind><dep>  0.917 </dep></entry>
+		<entry><ind> 0.4 </ind><dep>  0.9798 </dep></entry>
+		<entry><ind> 0.5 </ind><dep>  1.0 </dep></entry>
+            <entry><ind> 1.0 </ind><dep>  3.0 </dep></entry>
+			</interpolation>
+			<axis>
+				<x>0</x>
+				<y>1</y>
+				<z>0</z>
+			</axis>
+	</animation>
+      <animation>
+           <object-name>door1</object-name>
+            <type>rotate</type>
+            <property>/scenery/ELLX/hangar[3]/door[0]/position-norm</property>
+            <factor>1</factor>
+            <interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+		<entry><ind> 0.1 </ind><dep>  36.87 </dep></entry>
+		<entry><ind> 0.2 </ind><dep>  53.13 </dep></entry>
+		<entry><ind> 0.3 </ind><dep>  66.422 </dep></entry>
+		<entry><ind> 0.4 </ind><dep>  78.463 </dep></entry>
+            <entry><ind> 0.5 </ind><dep>  90 </dep></entry>
+            <entry><ind> 1.0 </ind><dep>  90 </dep></entry>
+			</interpolation>
+            <center>
+            <x-m>-3.0</x-m>
+            <y-m> -14.628   </y-m>
+            <z-m> 0</z-m>
+            </center>
+            <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>-1</z>
+  </axis>
+ </animation>
+
+	<animation>
+		<type>translate</type>
+		<object-name>door2</object-name>
+			<property>/scenery/ELLX/hangar[3]/door[0]/position-norm</property>
+			<factor>1</factor>
+			<interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+            <entry><ind> 0.5 </ind><dep>  2.0 </dep></entry>
+            <entry><ind> 0.6 </ind><dep>  2.02 </dep></entry>
+            <entry><ind> 0.7 </ind><dep>  2.083 </dep></entry>
+            <entry><ind> 0.8 </ind><dep>  2.2 </dep></entry>
+            <entry><ind> 0.9 </ind><dep>  2.4 </dep></entry>
+            <entry><ind> 0.95 </ind><dep>  2.564 </dep></entry>
+            <entry><ind> 1.0 </ind><dep>  3.0 </dep></entry>
+			</interpolation>
+			<axis>
+				<x>-1</x>
+				<y>0</y>
+				<z>0</z>
+			</axis>
+	</animation>
+	<animation>
+		<type>translate</type>
+		<object-name>door2</object-name>
+			<property>/scenery/ELLX/hangar[3]/door[0]/position-norm</property>
+			<factor>1</factor>
+			<interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+		<entry><ind> 0.5 </ind><dep>  0.0 </dep></entry>
+		<entry><ind> 0.6 </ind><dep>  0.2 </dep></entry>
+		<entry><ind> 0.7 </ind><dep>  0.4 </dep></entry>
+		<entry><ind> 0.8 </ind><dep>  0.6 </dep></entry>
+		<entry><ind> 0.9 </ind><dep>  0.8 </dep></entry>
+            <entry><ind> 1.0 </ind><dep>  1.0 </dep></entry>
+			</interpolation>
+			<axis>
+				<x>0</x>
+				<y>1</y>
+				<z>0</z>
+			</axis>
+	</animation>
+      <animation>
+           <object-name>door2</object-name>
+            <type>rotate</type>
+            <property>/scenery/ELLX/hangar[3]/door[0]/position-norm</property>
+            <factor>1</factor>
+            <interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+		<entry><ind> 0.5 </ind><dep>  0.00 </dep></entry>
+		<entry><ind> 0.6 </ind><dep>  11.537 </dep></entry>
+		<entry><ind> 0.7 </ind><dep>  23.578 </dep></entry>
+		<entry><ind> 0.8 </ind><dep>  36.87 </dep></entry>
+		<entry><ind> 0.9 </ind><dep>  53.13 </dep></entry>
+		<entry><ind> 0.95 </ind><dep>  64.158 </dep></entry>
+            <entry><ind> 1.0 </ind><dep>  90 </dep></entry>
+			</interpolation>
+            <center>
+            <x-m>-1.0</x-m>
+            <y-m> -14.628   </y-m>
+            <z-m> 0</z-m>
+            </center>
+            <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>-1</z>
+  </axis>
+ </animation>
+
+	<animation>
+		<type>translate</type>
+		<object-name>door3</object-name>
+			<property>/scenery/ELLX/hangar[3]/door[0]/position-norm</property>
+			<factor>1</factor>
+			<interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+            <entry><ind> 0.5 </ind><dep>  2.0 </dep></entry>
+            <entry><ind> 0.6 </ind><dep>  2.02 </dep></entry>
+            <entry><ind> 0.7 </ind><dep>  2.083 </dep></entry>
+            <entry><ind> 0.8 </ind><dep>  2.2 </dep></entry>
+            <entry><ind> 0.9 </ind><dep>  2.4 </dep></entry>
+            <entry><ind> 0.95 </ind><dep>  2.564 </dep></entry>
+            <entry><ind> 1.0 </ind><dep>  3.0 </dep></entry>
+			</interpolation>
+			<axis>
+				<x>1</x>
+				<y>0</y>
+				<z>0</z>
+			</axis>
+	</animation>
+	<animation>
+		<type>translate</type>
+		<object-name>door3</object-name>
+			<property>/scenery/ELLX/hangar[3]/door[0]/position-norm</property>
+			<factor>1</factor>
+			<interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+		<entry><ind> 0.5 </ind><dep>  0.00 </dep></entry>
+		<entry><ind> 0.6 </ind><dep>  0.2 </dep></entry>
+		<entry><ind> 0.7 </ind><dep>  0.4 </dep></entry>
+		<entry><ind> 0.8 </ind><dep>  0.6 </dep></entry>
+		<entry><ind> 0.9 </ind><dep>  0.8 </dep></entry>
+            <entry><ind> 1.0 </ind><dep>  1.0 </dep></entry>
+			</interpolation>
+			<axis>
+				<x>0</x>
+				<y>1</y>
+				<z>0</z>
+			</axis>
+	</animation>
+      <animation>
+           <object-name>door3</object-name>
+            <type>rotate</type>
+            <property>/scenery/ELLX/hangar[3]/door[0]/position-norm</property>
+            <factor>1</factor>
+            <interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+		<entry><ind> 0.5 </ind><dep>  0.00 </dep></entry>
+		<entry><ind> 0.6 </ind><dep>  11.537 </dep></entry>
+		<entry><ind> 0.7 </ind><dep>  23.578 </dep></entry>
+		<entry><ind> 0.8 </ind><dep>  36.87 </dep></entry>
+		<entry><ind> 0.9 </ind><dep>  53.13 </dep></entry>
+		<entry><ind> 0.95 </ind><dep>  64.158 </dep></entry>
+            <entry><ind> 1.0 </ind><dep>  90 </dep></entry>
+			</interpolation>
+            <center>
+            <x-m>1.0</x-m>
+            <y-m> -14.628   </y-m>
+            <z-m> 0</z-m>
+            </center>
+            <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+  </axis>
+ </animation>
+	<animation>
+		<type>translate</type>
+		<object-name>door4</object-name>
+			<property>/scenery/ELLX/hangar[3]/door[0]/position-norm</property>
+			<factor>1</factor>
+			<interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+            <entry><ind> 0.5 </ind><dep>  1.0 </dep></entry>
+            <entry><ind> 1.0 </ind><dep>  1.0 </dep></entry>
+			</interpolation>
+			<axis>
+				<x>1</x>
+				<y>0</y>
+				<z>0</z>
+			</axis>
+	</animation>
+	<animation>
+		<type>translate</type>
+		<object-name>door4</object-name>
+			<property>/scenery/ELLX/hangar[3]/door[0]/position-norm</property>
+			<factor>1</factor>
+			<interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+		<entry><ind> 0.1 </ind><dep>  0.6 </dep></entry>
+		<entry><ind> 0.2 </ind><dep>  0.8 </dep></entry>
+		<entry><ind> 0.3 </ind><dep>  0.917 </dep></entry>
+		<entry><ind> 0.4 </ind><dep>  0.9798 </dep></entry>
+		<entry><ind> 0.5 </ind><dep>  1.0 </dep></entry>
+            <entry><ind> 1.0 </ind><dep>  3.0 </dep></entry>
+			</interpolation>
+			<axis>
+				<x>0</x>
+				<y>1</y>
+				<z>0</z>
+			</axis>
+	</animation>
+      <animation>
+           <object-name>door4</object-name>
+            <type>rotate</type>
+            <property>/scenery/ELLX/hangar[3]/door[0]/position-norm</property>
+            <factor>1</factor>
+            <interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+		<entry><ind> 0.1 </ind><dep>  36.87 </dep></entry>
+		<entry><ind> 0.2 </ind><dep>  53.13 </dep></entry>
+		<entry><ind> 0.3 </ind><dep>  66.422 </dep></entry>
+		<entry><ind> 0.4 </ind><dep>  78.463 </dep></entry>
+            <entry><ind> 0.5 </ind><dep>  90 </dep></entry>
+            <entry><ind> 1.0 </ind><dep>  90 </dep></entry>
+			</interpolation>
+            <center>
+            <x-m>3.0</x-m>
+            <y-m> -14.628   </y-m>
+            <z-m> 0</z-m>
+            </center>
+            <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+  </axis>
+ </animation>
+
+	<animation>
+		<type>translate</type>
+		<object-name>door5</object-name>
+			<property>/scenery/ELLX/hangar[3]/door[1]/position-norm</property>
+			<factor>1</factor>
+			<interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+            <entry><ind> 1.0 </ind><dep>  4.5 </dep></entry>
+			</interpolation>
+			<axis>
+				<x>0</x>
+				<y>0</y>
+				<z>1</z>
+			</axis>
+	</animation>
+	<animation>
+		<type>translate</type>
+		<object-name>door5</object-name>
+			<property>/scenery/ELLX/hangar[3]/door[1]/position-norm</property>
+			<factor>1</factor>
+			<interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+		<entry><ind> 0.875 </ind><dep>  0.0 </dep></entry>
+		<entry><ind> 0.9 </ind><dep>  0.2179 </dep></entry>
+		<entry><ind> 0.925 </ind><dep>  0.3689 </dep></entry>
+		<entry><ind> 0.95 </ind><dep>  0.4465 </dep></entry>
+		<entry><ind> 0.975 </ind><dep>  0.4872 </dep></entry>
+            <entry><ind> 1.0 </ind><dep>  0.5 </dep></entry>
+			</interpolation>
+			<axis>
+				<x>0</x>
+				<y>1</y>
+				<z>0</z>
+			</axis>
+	</animation>
+      <animation>
+           <object-name>door5</object-name>
+            <type>rotate</type>
+            <property>/scenery/ELLX/hangar[3]/door[1]/position-norm</property>
+            <factor>1</factor>
+            <interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+		<entry><ind> 0.875 </ind><dep>  0.0 </dep></entry>
+		<entry><ind> 0.9 </ind><dep>  25.8419 </dep></entry>
+		<entry><ind> 0.925 </ind><dep>  47.5458 </dep></entry>
+		<entry><ind> 0.95 </ind><dep>  63.2563 </dep></entry>
+		<entry><ind> 0.975 </ind><dep>  76.9971 </dep></entry>
+            <entry><ind> 1.0 </ind><dep>  90 </dep></entry>
+			</interpolation>
+            <center>
+            <x-m>0</x-m>
+            <y-m> -7.904   </y-m>
+            <z-m> 0.5</z-m>
+            </center>
+            <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+  </axis>
+ </animation>
+	<animation>
+		<type>translate</type>
+		<object-name>door6</object-name>
+			<property>/scenery/ELLX/hangar[3]/door[1]/position-norm</property>
+			<factor>1</factor>
+			<interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+            <entry><ind> 0.65 </ind><dep>  2.925 </dep></entry>
+		<entry><ind> 0.675 </ind><dep>  3.019 </dep></entry>
+		<entry><ind> 0.7 </ind><dep>  3.075 </dep></entry>
+		<entry><ind> 0.725 </ind><dep>  3.131 </dep></entry>
+		<entry><ind> 0.75 </ind><dep>  3.188 </dep></entry>
+		<entry><ind> 0.775 </ind><dep>  3.244 </dep></entry>
+            <entry><ind> 0.8 </ind><dep>  3.3 </dep></entry>
+            <entry><ind> 0.825 </ind><dep>  3.365 </dep></entry>
+            <entry><ind> 0.85 </ind><dep>  3.413 </dep></entry>
+		<entry><ind> 0.875 </ind><dep>  3.469 </dep></entry>
+		<entry><ind> 0.9 </ind><dep>  3.5 </dep></entry>
+		<entry><ind> 1.0 </ind><dep>  3.5 </dep></entry>
+			</interpolation>
+			<axis>
+				<x>0</x>
+				<y>0</y>
+				<z>1</z>
+			</axis>
+	</animation>
+	<animation>
+		<type>translate</type>
+		<object-name>door6</object-name>
+			<property>/scenery/ELLX/hangar[3]/door[1]/position-norm</property>
+			<factor>1</factor>
+			<interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+		<entry><ind> 0.65 </ind><dep>  0.0 </dep></entry>
+		<entry><ind> 0.675 </ind><dep>  0.1356 </dep></entry>
+		<entry><ind> 0.7 </ind><dep>  0.2634 </dep></entry>
+		<entry><ind> 0.725 </ind><dep>  0.3377 </dep></entry>
+		<entry><ind> 0.75 </ind><dep>  0.3903 </dep></entry>
+		<entry><ind> 0.775 </ind><dep>  0.4293 </dep></entry>
+            <entry><ind> 0.8 </ind><dep>  .4583 </dep></entry>
+            <entry><ind> 0.825 </ind><dep>  0.4789 </dep></entry>
+            <entry><ind> 0.85 </ind><dep>  0.4923 </dep></entry>
+		<entry><ind> 0.875 </ind><dep>  0.4990 </dep></entry>
+		<entry><ind> 0.9 </ind><dep>  0.9359 </dep></entry>
+		<entry><ind> 0.925 </ind><dep>  1.2378 </dep></entry>
+		<entry><ind> 0.95 </ind><dep>  1.3930 </dep></entry>
+		<entry><ind> 0.975 </ind><dep>  1.4744 </dep></entry>
+            <entry><ind> 1.0 </ind><dep>  1.5 </dep></entry>
+			</interpolation>
+			<axis>
+				<x>0</x>
+				<y>1</y>
+				<z>0</z>
+			</axis>
+	</animation>
+      <animation>
+           <object-name>door6</object-name>
+            <type>rotate</type>
+            <property>/scenery/ELLX/hangar[3]/door[1]/position-norm</property>
+            <factor>1</factor>
+            <interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+		<entry><ind> 0.65 </ind><dep>  0.0 </dep></entry>
+		<entry><ind> 0.675 </ind><dep>  15.7405 </dep></entry>
+		<entry><ind> 0.7 </ind><dep>  31.7883 </dep></entry>
+		<entry><ind> 0.725 </ind><dep>  42.4811 </dep></entry>
+		<entry><ind> 0.75 </ind><dep>  51.3178 </dep></entry>
+		<entry><ind> 0.775 </ind><dep>  59.1695 </dep></entry>
+            <entry><ind> 0.8 </ind><dep>  66.4218 </dep></entry>
+            <entry><ind> 0.825 </ind><dep>  73.2917 </dep></entry>
+            <entry><ind> 0.85 </ind><dep>  79.9213 </dep></entry>
+            <entry><ind> 0.875 </ind><dep>  86.4167 </dep></entry>
+		<entry><ind> 0.9 </ind><dep>  90 </dep></entry>
+            <entry><ind> 1.0 </ind><dep>  90 </dep></entry>
+			</interpolation>
+            <center>
+            <x-m>0</x-m>
+            <y-m> -7.904   </y-m>
+            <z-m> 1.5</z-m>
+            </center>
+            <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+  </axis>
+ </animation>
+ 	<animation>
+		<type>translate</type>
+		<object-name>door7</object-name>
+			<property>/scenery/ELLX/hangar[3]/door[1]/position-norm</property>
+			<factor>1</factor>
+			<interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+            <entry><ind> 0.425 </ind><dep>  1.913 </dep></entry>
+		<entry><ind> 0.45 </ind><dep>  2.013 </dep></entry>
+		<entry><ind> 0.475 </ind><dep>  2.069 </dep></entry>
+		<entry><ind> 0.5 </ind><dep>  2.125 </dep></entry>
+		<entry><ind> 0.525 </ind><dep>  2.181 </dep></entry>
+		<entry><ind> 0.55 </ind><dep>  2.238 </dep></entry>
+            <entry><ind> 0.575 </ind><dep>  2.294 </dep></entry>
+            <entry><ind> 0.6 </ind><dep>  2.35 </dep></entry>
+            <entry><ind> 0.625 </ind><dep>  2.406 </dep></entry>
+		<entry><ind> 0.65 </ind><dep>  2.463 </dep></entry>
+		<entry><ind> 0.675 </ind><dep>  2.5 </dep></entry>
+		<entry><ind> 1.0 </ind><dep>  2.5 </dep></entry>
+			</interpolation>
+			<axis>
+				<x>0</x>
+				<y>0</y>
+				<z>1</z>
+			</axis>
+	</animation>
+	<animation>
+		<type>translate</type>
+		<object-name>door7</object-name>
+			<property>/scenery/ELLX/hangar[3]/door[1]/position-norm</property>
+			<factor>1</factor>
+			<interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+            <entry><ind> 0.425 </ind><dep>  0.0 </dep></entry>
+		<entry><ind> 0.45 </ind><dep>  .111 </dep></entry>
+		<entry><ind> 0.475 </ind><dep>  .253 </dep></entry>
+		<entry><ind> 0.5 </ind><dep>  .3307 </dep></entry>
+		<entry><ind> 0.525 </ind><dep>  .3852 </dep></entry>
+		<entry><ind> 0.55 </ind><dep>  .4256 </dep></entry>
+            <entry><ind> 0.575 </ind><dep>  .4555 </dep></entry>
+            <entry><ind> 0.6 </ind><dep>  .4777 </dep></entry>
+            <entry><ind> 0.625 </ind><dep>  .4911 </dep></entry>
+		<entry><ind> 0.65 </ind><dep>  .4986 </dep></entry>
+		<entry><ind> 0.675 </ind><dep>  .7713 </dep></entry>
+		<entry><ind> 0.7 </ind><dep>  1.0268 </dep></entry>
+		<entry><ind> 0.725 </ind><dep>  1.1753 </dep></entry>
+		<entry><ind> 0.75 </ind><dep>  1.2806 </dep></entry>
+		<entry><ind> 0.775 </ind><dep>  1.3587 </dep></entry>
+            <entry><ind> 0.8 </ind><dep>  1.4165 </dep></entry>
+            <entry><ind> 0.825 </ind><dep>  1.4578 </dep></entry>
+            <entry><ind> 0.85 </ind><dep>  1.4846 </dep></entry>
+            <entry><ind> 0.875 </ind><dep>  1.498 </dep></entry>
+		<entry><ind> 0.9 </ind><dep>  1.9359 </dep></entry>
+		<entry><ind> 0.925 </ind><dep>  2.2378 </dep></entry>
+		<entry><ind> 0.95 </ind><dep>  2.393 </dep></entry>
+		<entry><ind> 0.9725 </ind><dep>  2.4744 </dep></entry>
+		<entry><ind> 1.0 </ind><dep>  2.5 </dep></entry>
+			</interpolation>
+			<axis>
+				<x>0</x>
+				<y>1</y>
+				<z>0</z>
+			</axis>
+	</animation>
+      <animation>
+           <object-name>door7</object-name>
+            <type>rotate</type>
+            <property>/scenery/ELLX/hangar[3]/door[1]/position-norm</property>
+            <factor>1</factor>
+            <interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+		<entry><ind> 0.425 </ind><dep>  0.0 </dep></entry>
+		<entry><ind> 0.45 </ind><dep>  12.8386 </dep></entry>
+		<entry><ind> 0.475 </ind><dep>  30.4015 </dep></entry>
+		<entry><ind> 0.5 </ind><dep>  41.4 </dep></entry>
+		<entry><ind> 0.525 </ind><dep>  50.4 </dep></entry>
+		<entry><ind> 0.55 </ind><dep>  58.3 </dep></entry>
+            <entry><ind> 0.575 </ind><dep>  65.6 </dep></entry>
+            <entry><ind> 0.6 </ind><dep>  72.5 </dep></entry>
+            <entry><ind> 0.625 </ind><dep>  79.2 </dep></entry>
+            <entry><ind> 0.65 </ind><dep>  85.7 </dep></entry>
+		<entry><ind> 0.7 </ind><dep>  90 </dep></entry>
+            <entry><ind> 1.0 </ind><dep>  90 </dep></entry>
+		</interpolation>
+            <center>
+            <x-m>0</x-m>
+            <y-m> -7.904   </y-m>
+            <z-m> 2.5</z-m>
+            </center>
+            <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+  </axis>
+ </animation>
+
+ 	<animation>
+		<type>translate</type>
+		<object-name>door8</object-name>
+			<property>/scenery/ELLX/hangar[3]/door[1]/position-norm</property>
+			<factor>1</factor>
+			<interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+            <entry><ind> 0.2 </ind><dep>  .9 </dep></entry>
+		<entry><ind> 0.225 </ind><dep>  1.006 </dep></entry>
+		<entry><ind> 0.25 </ind><dep>  1.063 </dep></entry>
+		<entry><ind> 0.275 </ind><dep>  1.12 </dep></entry>
+		<entry><ind> 0.3 </ind><dep>  1.175 </dep></entry>
+		<entry><ind> 0.325 </ind><dep>  1.231 </dep></entry>
+            <entry><ind> 0.35 </ind><dep>  1.288 </dep></entry>
+            <entry><ind> 0.375 </ind><dep>  1.344 </dep></entry>
+            <entry><ind> 0.4 </ind><dep>  1.4 </dep></entry>
+		<entry><ind> 0.425 </ind><dep>  1.456 </dep></entry>
+		<entry><ind> 0.45 </ind><dep>  1.5 </dep></entry>
+		<entry><ind> 1.0 </ind><dep>  1.5 </dep></entry>
+			</interpolation>
+			<axis>
+				<x>0</x>
+				<y>0</y>
+				<z>1</z>
+			</axis>
+	</animation>
+	<animation>
+		<type>translate</type>
+		<object-name>door8</object-name>
+			<property>/scenery/ELLX/hangar[3]/door[1]/position-norm</property>
+			<factor>1</factor>
+			<interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+            <entry><ind> 0.2 </ind><dep>  0.0 </dep></entry>
+		<entry><ind> 0.225 </ind><dep>  .08 </dep></entry>
+		<entry><ind> 0.25 </ind><dep>  .24 </dep></entry>
+		<entry><ind> 0.275 </ind><dep>  .32 </dep></entry>
+		<entry><ind> 0.3 </ind><dep>  .38 </dep></entry>
+		<entry><ind> 0.325 </ind><dep>  .42 </dep></entry>
+            <entry><ind> 0.35 </ind><dep>  .45 </dep></entry>
+            <entry><ind> 0.375 </ind><dep>  .475 </dep></entry>
+            <entry><ind> 0.4 </ind><dep>  .49 </dep></entry>
+		<entry><ind> 0.425 </ind><dep>  .5 </dep></entry>
+		<entry><ind> 0.45 </ind><dep>  .72 </dep></entry>
+		<entry><ind> 0.475 </ind><dep>  1 </dep></entry>
+		<entry><ind> 0.5 </ind><dep>  1.16 </dep></entry>
+		<entry><ind> 0.525 </ind><dep>  1.27 </dep></entry>
+		<entry><ind> 0.55 </ind><dep>  1.35 </dep></entry>
+            <entry><ind> 0.575 </ind><dep>  1.41 </dep></entry>
+            <entry><ind> 0.6 </ind><dep>  1.45 </dep></entry>
+            <entry><ind> 0.625 </ind><dep>  1.48 </dep></entry>
+            <entry><ind> 0.65 </ind><dep>  1.49 </dep></entry>
+		<entry><ind> 0.675 </ind><dep>  1.77 </dep></entry>
+		<entry><ind> 0.7 </ind><dep>  2.0 </dep></entry>
+		<entry><ind> 0.725 </ind><dep>  2.2 </dep></entry>
+		<entry><ind> 0.75 </ind><dep>  2.28 </dep></entry>
+		<entry><ind> 0.775 </ind><dep>  2.36 </dep></entry>
+		<entry><ind> 0.8 </ind><dep>  2.42 </dep></entry>
+		<entry><ind> 0.825 </ind><dep>  2.46 </dep></entry>
+		<entry><ind> 0.85 </ind><dep>  2.48 </dep></entry>
+		<entry><ind> 0.875 </ind><dep>  2.5 </dep></entry>
+		<entry><ind> 0.9 </ind><dep>  2.9 </dep></entry>
+		<entry><ind> 0.925 </ind><dep>  3.23 </dep></entry>
+		<entry><ind> 0.95 </ind><dep>  3.39 </dep></entry>
+		<entry><ind> 0.975 </ind><dep>  3.47 </dep></entry>
+		<entry><ind> 1.0 </ind><dep>  3.5 </dep></entry>
+			</interpolation>
+			<axis>
+				<x>0</x>
+				<y>1</y>
+				<z>0</z>
+			</axis>
+	</animation>
+      <animation>
+           <object-name>door8</object-name>
+            <type>rotate</type>
+            <property>/scenery/ELLX/hangar[3]/door[1]/position-norm</property>
+            <factor>1</factor>
+            <interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+		<entry><ind> 0.2 </ind><dep>  0.0 </dep></entry>
+		<entry><ind> 0.225 </ind><dep>  9.1 </dep></entry>
+		<entry><ind> 0.25 </ind><dep>  29 </dep></entry>
+		<entry><ind> 0.275 </ind><dep>  40.3 </dep></entry>
+		<entry><ind> 0.3 </ind><dep>  49.5 </dep></entry>
+		<entry><ind> 0.325 </ind><dep>  57.5 </dep></entry>
+            <entry><ind> 0.35 </ind><dep>  64.8 </dep></entry>
+            <entry><ind> 0.375 </ind><dep>  71.8 </dep></entry>
+            <entry><ind> 0.4 </ind><dep>  78.5 </dep></entry>
+            <entry><ind> 0.425 </ind><dep>  85 </dep></entry>
+		<entry><ind> 0.45 </ind><dep>  90 </dep></entry>
+            <entry><ind> 1.0 </ind><dep>  90 </dep></entry>
+		</interpolation>
+            <center>
+            <x-m>0</x-m>
+            <y-m> -7.904   </y-m>
+            <z-m> 3.5</z-m>
+            </center>
+            <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+  </axis>
+ </animation>
+
+ 	<animation>
+		<type>translate</type>
+		<object-name>door9</object-name>
+			<property>/scenery/ELLX/hangar[3]/door[1]/position-norm</property>
+			<factor>1</factor>
+			<interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+            <entry><ind> 0.025 </ind><dep>  .06 </dep></entry>
+		<entry><ind> 0.05 </ind><dep>  .11 </dep></entry>
+		<entry><ind> 0.075 </ind><dep>  .17 </dep></entry>
+		<entry><ind> 0.1 </ind><dep>  .23 </dep></entry>
+		<entry><ind> 0.125 </ind><dep>  .28 </dep></entry>
+		<entry><ind> 0.15 </ind><dep>  .34 </dep></entry>
+            <entry><ind> 0.175 </ind><dep>  .39 </dep></entry>
+            <entry><ind> 0.2 </ind><dep>  .45 </dep></entry>
+            <entry><ind> 0.225 </ind><dep>  0.5 </dep></entry>
+		<entry><ind> 1.0 </ind><dep>  0.5 </dep></entry>
+			</interpolation>
+			<axis>
+				<x>0</x>
+				<y>0</y>
+				<z>1</z>
+			</axis>
+	</animation>
+	<animation>
+		<type>translate</type>
+		<object-name>door9</object-name>
+			<property>/scenery/ELLX/hangar[3]/door[1]/position-norm</property>
+			<factor>1</factor>
+			<interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+		<entry><ind> 0.025 </ind><dep>  0.23 </dep></entry>
+		<entry><ind> 0.05 </ind><dep>  0.32 </dep></entry>
+		<entry><ind> 0.075 </ind><dep>  0.37 </dep></entry>
+		<entry><ind> 0.1 </ind><dep>  0.42 </dep></entry>
+		<entry><ind> 0.125 </ind><dep>  0.45 </dep></entry>
+		<entry><ind> 0.15 </ind><dep>  0.47 </dep></entry>
+		<entry><ind> 0.175 </ind><dep>  0.49 </dep></entry>
+            <entry><ind> 0.2 </ind><dep>  0.5 </dep></entry>
+		<entry><ind> 0.225 </ind><dep>  .66 </dep></entry>
+		<entry><ind> 0.25 </ind><dep>  .98 </dep></entry>
+		<entry><ind> 0.275 </ind><dep>  1.15 </dep></entry>
+		<entry><ind> 0.3 </ind><dep>  1.26 </dep></entry>
+		<entry><ind> 0.325 </ind><dep>  1.34 </dep></entry>
+            <entry><ind> 0.35 </ind><dep>  1.41 </dep></entry>
+            <entry><ind> 0.375 </ind><dep>  1.45 </dep></entry>
+            <entry><ind> 0.4 </ind><dep>  1.48 </dep></entry>
+		<entry><ind> 0.425 </ind><dep>  1.5 </dep></entry>
+		<entry><ind> 0.45 </ind><dep>  1.72 </dep></entry>
+		<entry><ind> 0.475 </ind><dep>  2 </dep></entry>
+		<entry><ind> 0.5 </ind><dep>  2.16 </dep></entry>
+		<entry><ind> 0.525 </ind><dep>  2.27 </dep></entry>
+		<entry><ind> 0.55 </ind><dep>  2.35 </dep></entry>
+            <entry><ind> 0.575 </ind><dep>  2.41 </dep></entry>
+            <entry><ind> 0.6 </ind><dep>  2.45 </dep></entry>
+            <entry><ind> 0.625 </ind><dep>  2.48 </dep></entry>
+            <entry><ind> 0.65 </ind><dep>  2.5 </dep></entry>
+		<entry><ind> 0.675 </ind><dep>  2.77 </dep></entry>
+		<entry><ind> 0.7 </ind><dep>  3.03 </dep></entry>
+		<entry><ind> 0.725 </ind><dep>  3.18 </dep></entry>
+		<entry><ind> 0.75 </ind><dep>  3.28 </dep></entry>
+		<entry><ind> 0.775 </ind><dep>  3.36 </dep></entry>
+		<entry><ind> 0.8 </ind><dep>  3.42 </dep></entry>
+		<entry><ind> 0.825 </ind><dep>  3.46 </dep></entry>
+		<entry><ind> 0.85 </ind><dep>  3.48 </dep></entry>
+		<entry><ind> 0.875 </ind><dep>  3.5 </dep></entry>
+		<entry><ind> 0.9 </ind><dep>  3.9 </dep></entry>
+		<entry><ind> 0.925 </ind><dep>  4.24 </dep></entry>
+		<entry><ind> 0.95 </ind><dep>  4.39 </dep></entry>
+		<entry><ind> 0.975 </ind><dep>  4.47 </dep></entry>
+		<entry><ind> 1.0 </ind><dep>  4.5 </dep></entry>
+			</interpolation>
+			<axis>
+				<x>0</x>
+				<y>1</y>
+				<z>0</z>
+			</axis>
+	</animation>
+      <animation>
+           <object-name>door9</object-name>
+            <type>rotate</type>
+            <property>/scenery/ELLX/hangar[3]/door[1]/position-norm</property>
+            <factor>1</factor>
+            <interpolation>
+		<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+		<entry><ind> 0.025 </ind><dep>  27 </dep></entry>
+		<entry><ind> 0.05 </ind><dep>  39 </dep></entry>
+		<entry><ind> 0.075 </ind><dep>  49 </dep></entry>
+		<entry><ind> 0.1 </ind><dep>  57 </dep></entry>
+		<entry><ind> 0.125 </ind><dep>  64 </dep></entry>
+		<entry><ind> 0.15 </ind><dep>  71 </dep></entry>
+            <entry><ind> 0.175 </ind><dep>  77 </dep></entry>
+            <entry><ind> 0.2 </ind><dep>  84 </dep></entry>
+            <entry><ind> 0.225 </ind><dep>  90 </dep></entry>
+            <entry><ind> 1.0 </ind><dep>  90 </dep></entry>
+		</interpolation>
+            <center>
+            <x-m>0</x-m>
+            <y-m> -7.904   </y-m>
+            <z-m> 4.5</z-m>
+            </center>
+            <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+  </axis>
+ </animation>
+
+<animation>
+	<type>translate</type>
+	<object-name>door10</object-name>
+		<property>/scenery/ELLX/hangar[3]/door[2]/position-norm</property>
+		<factor>1</factor>
+		<interpolation>
+	            <entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+	            <entry><ind> 0.2 </ind><dep>  0.15 </dep></entry>
+	            <entry><ind> 0.4 </ind><dep>  0.57 </dep></entry>
+	            <entry><ind> 0.6 </ind><dep>  1.24 </dep></entry>
+                  <entry><ind> 1.0 </ind><dep>  3 </dep></entry>
+		</interpolation>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+</animation>
+<animation>
+      <object-name>door10</object-name>
+      <type>rotate</type>
+      <property>/scenery/ELLX/hangar[3]/door[2]/position-norm</property>
+      <factor>1</factor>
+      <interpolation>
+            <entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+	      <entry><ind> 1.0 </ind><dep>  90 </dep></entry>
+	</interpolation>
+      <center>
+            <x-m>0</x-m>
+            <y-m> -7.68</y-m>
+            <z-m> 0</z-m>
+      </center>
+      <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+      </axis>
+</animation>
+
+<animation>
+	<type>translate</type>
+	<object-name>door11</object-name>
+		<property>/scenery/ELLX/hangar[3]/door[3]/position-norm</property>
+		<factor>1</factor>
+		<interpolation>
+	            <entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+	            <entry><ind> 0.2 </ind><dep>  0.15 </dep></entry>
+	            <entry><ind> 0.4 </ind><dep>  0.57 </dep></entry>
+	            <entry><ind> 0.6 </ind><dep>  1.24 </dep></entry>
+                  <entry><ind> 1.0 </ind><dep>  3 </dep></entry>
+		</interpolation>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+</animation>
+<animation>
+      <object-name>door11</object-name>
+      <type>rotate</type>
+      <property>/scenery/ELLX/hangar[3]/door[3]/position-norm</property>
+      <factor>1</factor>
+      <interpolation>
+            <entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+	      <entry><ind> 1.0 </ind><dep>  90 </dep></entry>
+	</interpolation>
+      <center>
+            <x-m>0</x-m>
+            <y-m> -7.68</y-m>
+            <z-m> 0</z-m>
+      </center>
+      <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+      </axis>
+</animation>
+
+<animation>
+	<type>translate</type>
+	<object-name>door12</object-name>
+		<property>/scenery/ELLX/hangar[3]/door[4]/position-norm</property>
+		<factor>1</factor>
+		<interpolation>
+	            <entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+	            <entry><ind> 0.2 </ind><dep>  0.15 </dep></entry>
+	            <entry><ind> 0.4 </ind><dep>  0.57 </dep></entry>
+	            <entry><ind> 0.6 </ind><dep>  1.24 </dep></entry>
+                  <entry><ind> 1.0 </ind><dep>  3 </dep></entry>
+		</interpolation>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+</animation>
+<animation>
+      <object-name>door12</object-name>
+      <type>rotate</type>
+      <property>/scenery/ELLX/hangar[3]/door[4]/position-norm</property>
+      <factor>1</factor>
+      <interpolation>
+            <entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+	      <entry><ind> 1.0 </ind><dep>  90 </dep></entry>
+	</interpolation>
+      <center>
+            <x-m>0</x-m>
+            <y-m> -7.68</y-m>
+            <z-m> 0</z-m>
+      </center>
+      <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+      </axis>
+</animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>door1</object-name>
+  <object-name>door2</object-name>
+  <object-name>door3</object-name>
+  <object-name>door4</object-name>
+  <visible>true</visible>
+  <action>
+   <name>click</name>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>
+            scenery.ELLX.hangar[3].door[0].toggle();
+    </script>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>door5</object-name>
+  <object-name>door6</object-name>
+  <object-name>door7</object-name>
+  <object-name>door8</object-name>
+  <object-name>door9</object-name>
+  <visible>true</visible>
+  <action>
+   <name>click</name>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>
+            scenery.ELLX.hangar[3].door[1].toggle();
+    </script>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>door10</object-name>
+  <visible>true</visible>
+  <action>
+   <name>click</name>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>
+            scenery.ELLX.hangar[3].door[2].toggle();
+    </script>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>door11</object-name>
+  <visible>true</visible>
+  <action>
+   <name>click</name>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>
+            scenery.ELLX.hangar[3].door[3].toggle();
+    </script>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>door12</object-name>
+  <visible>true</visible>
+  <action>
+   <name>click</name>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>
+            scenery.ELLX.hangar[3].door[4].toggle();
+    </script>
+   </binding>
+  </action>
+ </animation>
+
+  <animation>
+    <type>range</type>
+    <min-m>0</min-m>
+    <max-property>sim/rendering/static-lod/bare</max-property>
+  </animation>
+
+</PropertyList>

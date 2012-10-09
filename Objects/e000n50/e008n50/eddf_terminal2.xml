@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+
+ <PropertyList>
+
+   <path>eddf_terminal2.ac</path>
+
+   <animation>
+     <type>range</type>
+     <min-m>0</min-m>
+     <max-m>15000</max-m>
+   </animation>
+
+   <model>
+     <path>Models/Airport/Jetway/jetway-movable-2.xml</path>
+     <offsets>
+       <x-m>-285.421</x-m>
+       <y-m>-24.084</y-m>
+       <z-m>0.1</z-m>
+       <heading-deg>-90</heading-deg>
+     </offsets>
+   </model>
+
+   <model>
+     <path>Models/Airport/Jetway/jetway-movable-2.xml</path>
+     <offsets>
+       <x-m>-202.421</x-m>
+       <y-m>-24.084</y-m>
+       <z-m>0.1</z-m>
+       <heading-deg>-90</heading-deg>
+     </offsets>
+   </model>
+
+   <model>
+     <path>Models/Airport/Jetway/jetway-movable-2.xml</path>
+     <offsets>
+       <x-m>-120.421</x-m>
+       <y-m>-24.084</y-m>
+       <z-m>0.1</z-m>
+       <heading-deg>-90</heading-deg>
+     </offsets>
+   </model>
+   
+   <model>
+     <path>Models/Airport/Jetway/jetway-movable-2.xml</path>
+     <offsets>
+       <x-m>-38.421</x-m>
+       <y-m>-24.084</y-m>
+       <z-m>0.3</z-m>
+       <heading-deg>-90</heading-deg>
+     </offsets>
+   </model>
+
+   <model>
+     <path>Models/Airport/Jetway/jetway-movable-2.xml</path>
+     <offsets>
+       <x-m>45.579</x-m>
+       <y-m>-24.084</y-m>
+       <z-m>0.3</z-m>
+       <heading-deg>-90</heading-deg>
+     </offsets>
+   </model>
+
+   <model>
+     <path>Models/Airport/Jetway/jetway-movable-2.xml</path>
+     <offsets>
+       <x-m>127.579</x-m>
+       <y-m>-24.084</y-m>
+       <z-m>0.3</z-m>
+       <heading-deg>-90</heading-deg>
+     </offsets>
+   </model>
+
+   <model>
+     <path>Models/Airport/Jetway/jetway-movable-2.xml</path>
+     <offsets>
+       <x-m>209.579</x-m>
+       <y-m>-24.084</y-m>
+       <z-m>0.4</z-m>
+       <heading-deg>-90</heading-deg>
+     </offsets>
+   </model> 
+
+   <model>
+     <path>Models/Airport/Jetway/jetway-movable-2.xml</path>
+     <offsets>
+       <x-m>291.579</x-m>
+       <y-m>-24.084</y-m>
+       <z-m>0.4</z-m>
+       <heading-deg>-90</heading-deg>
+     </offsets>
+   </model>
+ </PropertyList>
