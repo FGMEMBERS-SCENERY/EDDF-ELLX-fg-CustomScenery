@@ -1,16 +1,18 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html><head>
 
-
   
-  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>EDDF-ELLX-ETAR AdOn.html</title></head><body>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>EDDF-ELLX Airport AddOn.html</title></head><body>
 <h1 style="text-align: center;"><small>Installing the</small> &nbsp; <span style="font-style: italic;">EDDF-ELLX</span>&nbsp;&nbsp; <small>Airport
 AddOn's</small></h1>
 
-<div style="text-align: center;"><span style="color: black;">Version </span><span style="color: black; font-weight: bold;">2012-08-14 &nbsp; ---&nbsp; <big>Improved buildings at ELLX</big></span><br>
-<span style="color: black;">Version </span><span style="color: black; font-weight: bold;">2012-04-16 &nbsp; ---&nbsp; <big>Introducing
-850 Layout - first step</big></span><br>
-</div>
+<div style="text-align: center;"><big><span style="font-weight: bold;">Version
+20121009:</span></big><br>
+- All Terrain has been rebuild fixing an elevation error<br>
+- Bridges to 07L/25R at EDDF realigned to taxiways<br>
+- ELLX is flattened more so the taxiway lines are closer to the surface<br>
+- added more park positions to ELLX, adjusted groundnet<br>
+- small cosmetic changes to ELLX buildings</div>
 
 <table style="text-align: left;" border="1" cellpadding="2" cellspacing="20">
 
@@ -20,33 +22,42 @@ AddOn's</small></h1>
       <td style="vertical-align: top; text-align: center;"><span style="font-weight: bold; font-style: italic;">(Deutsch)</span></td>
     </tr>
     <tr>
-      <td style="vertical-align: top; background-color: rgb(255, 255, 153);"><big style="font-weight: bold;"><span style="color: red;">
-Please notice:</span>
-      </big><br>We are now switching to the "850 style scenery<br>
+      <td style="vertical-align: top; background-color: rgb(255, 255, 153);"><big style="font-weight: bold;"><span style="color: red;">Please notice:</span>
+      </big><br>
+We are now switching to the "850 style scenery<br>
 -- although we know it
 is not 100% complete yet<br>
--- but the Taxi- and Runways look great already
-      <br>
+-- but the Taxi- and Runways look great already <br>
 -- and all Major-Taxiways do have centerlines already
 (in the current GIT-version)<br>
-      <br>As minimum you should use the FGFS-version 2.6:
       <br>
+As minimum you should use the FGFS-version 2.6: <br>
 -- for versions prior 2.6 the centerlines are not clearly visible in
 daylight<br>
 -- for version 2.6 you can add "FGdata/effects/lfeat.eff"
 to improve that<br>
--- starting with the current GIT-FGDATA this is already included (see item 3)!<br>
+-- starting with the current GIT-FGDATA this is already included (see
+item 3)!<br>
       <br>
 Do not forget step 2: Replacing the NAVDAT in order to have the correct
-ILS-Frequencies
-      
-      </td>
+ILS-Frequencies </td>
       <td style="vertical-align: top; background-color: rgb(255, 255, 153);"><big><span style="font-weight: bold;"><span style="color: red;">Bitte beachte:</span></span></big>
-<br>Wir führen mit dieser Änderung den neuen 850-airport-layout ein
-<br>-- obwohl wir wissen, dass er noch nicht ganz komplett ist<br>-- aber die Taxi- und Landebahnen schauen schon sehr gut aus <br>-- und alle Haupt-Taxiways haben bereits Landebahnen (in der neuesten GIT-Version)<br>
-<br>Du solltest hierzu mindestens die FGFS-Version 2.6 installiert haben<br>
--- für Versionen vor 2.6 sind die Mittellinien kaum sichtbar (außer bei Nacht!)
-<br>-- für Version 2.6 kannst Du die neue Datei "FGdata/effects/lfeat.eff" einfügen<br>-- ab der derzeitigen GIT-FGDATA Version is diese Datei bereits ausgetauscht (siehe Punkt 3)!<br>
+      <br>
+Wir führen mit dieser Änderung den neuen 850-airport-layout ein
+      <br>
+-- obwohl wir wissen, dass er noch nicht ganz komplett ist<br>
+-- aber die Taxi- und Landebahnen schauen schon sehr gut aus <br>
+-- und alle Haupt-Taxiways haben bereits Landebahnen (in der neuesten
+GIT-Version)<br>
+      <br>
+Du solltest hierzu mindestens die FGFS-Version 2.6 installiert haben<br>
+-- für Versionen vor 2.6 sind die Mittellinien kaum sichtbar (außer bei
+Nacht!)
+      <br>
+-- für Version 2.6 kannst Du die neue Datei "FGdata/effects/lfeat.eff"
+einfügen<br>
+-- ab der derzeitigen GIT-FGDATA Version is diese Datei bereits
+ausgetauscht (siehe Punkt 3)!<br>
       <br>
 Vergiss nicht den 2ten Punkt der Anleitung: Erneuere die NAVDAT für die
 ILS-Frequenzen!</td>
@@ -345,25 +356,29 @@ Ersetze nun also die bestehende "<span style="font-weight: bold;">$FG_ROOT/Navai
 mit der in diesem EDDF-ELLX-Paket befindlichen "<span style="font-weight: bold;">EDDF-ELLX/nav.dat.gz</span>" <br>
       </td>
     </tr>
-    
   </tbody>
 </table>
 
 <big style="font-style: italic;"><big><big><span style="font-weight: bold;"><span style="color: rgb(0, 102, 0);"></span></span></big></big></big><br>
-<big style="font-style: italic;"><big><big><span style="font-weight: bold;">3) Replace the lfeat.eff</span></big></big></big><br>
-<table style="text-align: left;" cellpadding="2" cellspacing="2">
 
+<big style="font-style: italic;"><big><big><span style="font-weight: bold;">3) Replace the lfeat.eff</span></big></big></big><br>
+
+<table style="text-align: left;" cellpadding="2" cellspacing="2">
 
   <tbody>
     <tr>
-      <td style="vertical-align: top; width: 50%;">To increase the visibility of the taxiway centerlines for FGDATA-versions <span style="font-weight: bold;">2.6 and prior</span> you may replace the <span style="font-weight: bold;">"$FG_ROOT/effects/lfeat.eff":</span><br>-- rename the existing file (e.g. to "lfeat.eff-org")<br>-- copy the new one from this package into the "<span style="font-weight: bold;">$FG_ROOT/effects/"<br>
+      <td style="vertical-align: top; width: 50%;">To increase the
+visibility of the taxiway centerlines for FGDATA-versions <span style="font-weight: bold;">2.6 and prior</span> you may replace the <span style="font-weight: bold;">"$FG_ROOT/effects/lfeat.eff":</span><br>
+-- rename the existing file (e.g. to "lfeat.eff-org")<br>
+-- copy the new one from this package into the "<span style="font-weight: bold;">$FG_ROOT/effects/"<br>
       <br>
-      </span>
-      </td>
-      <td style="vertical-align: top; width: 50%;">Um die Centerlines der neuen Taxiways zu verbessern, kannst Du für alle Versionen vor der derzeitigen GIT (2.7) die bestehende <span style="font-weight: bold;">"$FG_ROOT/effects/lfeat.eff"</span> austauschen:<br>
+      </span> </td>
+      <td style="vertical-align: top; width: 50%;">Um die Centerlines
+der neuen Taxiways zu verbessern, kannst Du für alle Versionen vor der
+derzeitigen GIT (2.7) die bestehende <span style="font-weight: bold;">"$FG_ROOT/effects/lfeat.eff"</span>
+austauschen:<br>
 -- benenne die bestehende Datei um (z.B. in "lfeat.eff-org")<br>
--- kopiere die neue Datei aus dieser ZIP-Verteilung in das Verzeichnis  "<span style="font-weight: bold;">$FG_ROOT/effects/"</span>
-      </td>
+-- kopiere die neue Datei aus dieser ZIP-Verteilung in das Verzeichnis "<span style="font-weight: bold;">$FG_ROOT/effects/"</span> </td>
     </tr>
     <tr>
       <td style="vertical-align: top; font-weight: bold; text-align: center;"><big>We
@@ -374,8 +389,8 @@ hoffen Du hast viel Freude damit!</big></td>
   </tbody>
 </table>
 
-
 <big style="font-style: italic;"><big><big><span style="font-weight: bold;"><span style="color: rgb(0, 102, 0);"></span></span></big></big></big><br>
+
 <br>
 
 <span style="font-weight: bold;">History:</span><br>
@@ -391,4 +406,5 @@ markings <span style="background-color: white; font-weight: bold; color: rgb(0, 
 change taxi/runway-signs according to new ground chart</span><br>
 
 <br>
+
 </body></html>
