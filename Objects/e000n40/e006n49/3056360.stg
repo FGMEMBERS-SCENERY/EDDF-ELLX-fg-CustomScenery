@@ -64,35 +64,35 @@ OBJECT_STATIC ELLX_GA8.ac 6.1961807 49.623693 361.98 300
 OBJECT_STATIC ELLX_blue-container.xml 6.1999716 49.625791 365.4 305
 
 #lightpoles apron P1
-OBJECT_SHARED Models/Airport/light-pole-20m-circular.xml 6.2169407 49.6341 373.65 120
-OBJECT_SHARED Models/Airport/light-pole-20m-circular.xml 6.220227 49.632586 371.5 300
-OBJECT_SHARED Models/Airport/light-pole-20m-circular.xml 6.218593 49.632901 372.1 300
-OBJECT_SHARED Models/Airport/light-pole-20m-circular.xml 6.218126 49.631942 371.2 300
-OBJECT_SHARED Models/Airport/light-pole-20m-circular.xml 6.216683 49.631515 370.8 300
-OBJECT_SHARED Models/Airport/light-pole-20m-circular.xml 6.217232 49.632688 372 300
-OBJECT_SHARED Models/Airport/light-pole-20m-circular.xml 6.215932 49.632475 372 300
-OBJECT_SHARED Models/Airport/light-pole-20m-circular.xml 6.214791 49.63131 371 210
-OBJECT_SHARED Models/Airport/light-pole-20m-circular.xml 6.214595 49.631255 371 30
+OBJECT_STATIC Models/Airport/ELLX_light-pole-20m-circular.xml 6.2169407 49.6341 373.65 120
+OBJECT_STATIC Models/Airport/ELLX_light-pole-20m-circular.xml 6.220227 49.632586 371.5 300
+OBJECT_STATIC Models/Airport/ELLX_light-pole-20m-circular.xml 6.218593 49.632901 372.1 300
+OBJECT_STATIC Models/Airport/ELLX_light-pole-20m-circular.xml 6.218126 49.631942 371.2 300
+OBJECT_STATIC Models/Airport/ELLX_light-pole-20m-circular.xml 6.216683 49.631515 370.8 300
+OBJECT_STATIC Models/Airport/ELLX_light-pole-20m-circular.xml 6.217232 49.632688 372 300
+OBJECT_STATIC Models/Airport/ELLX_light-pole-20m-circular.xml 6.215932 49.632475 372 300
+OBJECT_STATIC Models/Airport/ELLX_light-pole-20m-circular.xml 6.214791 49.63131 371 210
+OBJECT_STATIC Models/Airport/ELLX_light-pole-20m-circular.xml 6.214595 49.631255 371 30
 #light poles term B
-OBJECT_SHARED Models/Airport/light-pole-20m-circular.xml 6.2140157 49.631952 371.76 30
-OBJECT_SHARED Models/Airport/light-pole-20m-circular.xml 6.2137485 49.632234 371.89 30
-OBJECT_SHARED Models/Airport/light-pole-20m-circular.xml 6.2134652 49.632556 372.88 30
-OBJECT_SHARED Models/Airport/light-pole-20m-circular.xml 6.2142946 49.631961 371.67 210
-OBJECT_SHARED Models/Airport/light-pole-20m-circular.xml 6.2140353 49.632252 371.93 210
-OBJECT_SHARED Models/Airport/light-pole-20m-circular.xml 6.2137675 49.632547 372.38 210
+OBJECT_STATIC Models/Airport/ELLX_light-pole-20m-circular.xml 6.2140157 49.631952 371.76 30
+OBJECT_STATIC Models/Airport/ELLX_light-pole-20m-circular.xml 6.2137485 49.632234 371.89 30
+OBJECT_STATIC Models/Airport/ELLX_light-pole-20m-circular.xml 6.2134652 49.632556 372.88 30
+OBJECT_STATIC Models/Airport/ELLX_light-pole-20m-circular.xml 6.2142946 49.631961 371.67 210
+OBJECT_STATIC Models/Airport/ELLX_light-pole-20m-circular.xml 6.2140353 49.632252 371.93 210
+OBJECT_STATIC Models/Airport/ELLX_light-pole-20m-circular.xml 6.2137675 49.632547 372.38 210
 #light poles term P2P3
-OBJECT_SHARED Models/Airport/light-pole-20m-circular.xml 6.2075353 49.629584 369.6 120
-OBJECT_SHARED Models/Airport/light-pole-20m-circular.xml 6.2088339 49.630122 370.3 120
-OBJECT_SHARED Models/Airport/light-pole-20m-circular.xml 6.2080961 49.629845 369.9 120
-OBJECT_SHARED Models/Airport/light-pole-20m-circular.xml 6.210418 49.630673 374.1 96
+OBJECT_STATIC Models/Airport/ELLX_light-pole-20m-circular.xml 6.2075353 49.629584 369.6 120
+OBJECT_STATIC Models/Airport/ELLX_light-pole-20m-circular.xml 6.2088339 49.630122 370.3 120
+OBJECT_STATIC Models/Airport/ELLX_light-pole-20m-circular.xml 6.2080961 49.629845 369.9 120
+OBJECT_STATIC Models/Airport/ELLX_light-pole-20m-circular.xml 6.210418 49.630673 374.1 96
 #light poles term P7
-OBJECT_SHARED Models/Airport/light-pole-20m-circular.xml 6.2279598 49.638321 374.31 30
-OBJECT_SHARED Models/Airport/light-pole-20m-circular.xml 6.2293943 49.636669 372.52 30
-OBJECT_SHARED Models/Airport/light-pole-20m-circular.xml 6.2284203 49.637771 373.62 30
-OBJECT_SHARED Models/Airport/light-pole-20m-circular.xml 6.2288398 49.637296 373.08 30
+OBJECT_STATIC Models/Airport/ELLX_light-pole-20m-circular.xml 6.2279598 49.638321 374.31 30
+OBJECT_STATIC Models/Airport/ELLX_light-pole-20m-circular.xml 6.2293943 49.636669 372.52 30
+OBJECT_STATIC Models/Airport/ELLX_light-pole-20m-circular.xml 6.2284203 49.637771 373.62 30
+OBJECT_STATIC Models/Airport/ELLX_light-pole-20m-circular.xml 6.2288398 49.637296 373.08 30
 #light poles grayhanger
-OBJECT_SHARED Models/Airport/light-pole-20m-circular.xml 6.201609 49.625879 366.015 144
-OBJECT_SHARED Models/Airport/light-pole-20m-circular.xml 6.2020981 49.626412 366.557 120
+OBJECT_STATIC Models/Airport/ELLX_light-pole-20m-circular.xml 6.201609 49.625879 366.015 144
+OBJECT_STATIC Models/Airport/ELLX_light-pole-20m-circular.xml 6.2020981 49.626412 366.557 120
 
 # term B
 OBJECT_STATIC ELLX_termB.xml 6.2137399 49.632293 371.4 30.3

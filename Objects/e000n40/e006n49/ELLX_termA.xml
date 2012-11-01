@@ -4,12 +4,72 @@
 
   <path>ELLX_termA.ac</path>
 
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>window_1</object-name>
+  </effect>
+
   <animation>
     <type>range</type>
     <min-m>0</min-m>
     <max-property>sim/rendering/static-lod/bare</max-property>
   </animation>
 
+<animation>
+   <type>light</type>
+   <light-type>point</light-type>
+   <name>LightSrc</name>
+   <object-name>lighting</object-name>
+   <nopreview/>
+   <position>
+     <x>0</x>
+     <y>0</y>
+     <z>25</z>
+   </position>
+   <ambient>
+     <r>0.45</r>
+     <g>0.45</g>
+     <b>0.6</b>
+     <a>1.0</a>
+   </ambient>
+   <diffuse>
+     <r>0.045</r>
+     <g>0.045</g>
+     <b>0.06</b>
+     <a>1.0</a>
+   </diffuse>
+   <specular>
+     <r>0.045</r>
+     <g>0.045</g>
+     <b>0.06</b>
+     <a>1.0</a>
+   </specular>
+   <attenuation>
+     <c>1.0</c>
+     <l>0.005</l>
+     <q>0.0002</q>
+   </attenuation>
+   <near-m>50</near-m>
+   <far-m>500</far-m>
+ </animation>
+
+      <animation>
+            <type>select</type>
+            <object-name>LightSrc</object-name>
+            <condition>
+                  <and>
+                        <property>/sim/rendering/rembrandt/enabled</property>
+                        <greater-than>
+                              <property>/sim/rendering/shaders/lights</property>
+                              <value>0</value>
+                        </greater-than>
+                        <greater-than>
+                              <property>/sim/time/sun-angle-rad</property>
+                              <value>1.50</value>
+                        </greater-than>
+                  </and>
+            </condition>
+      </animation>
 
   <animation>
     <type>material</type>
@@ -21,9 +81,9 @@
       </greater-than>
     </condition>
     <emission>
-      <red>   0.5 </red>
-      <green> 0.5 </green>
-      <blue>  0.5 </blue>
+      <red>   0.4 </red>
+      <green> 0.4 </green>
+      <blue>  0.4 </blue>
     </emission>
   </animation>
 
@@ -53,47 +113,15 @@
       </greater-than>
     </condition>
     <emission>
-      <red>   0.5 </red>
-      <green> 0.5 </green>
-      <blue>  0.5 </blue>
+      <red>   0.4 </red>
+      <green> 0.4 </green>
+      <blue>  0.4 </blue>
     </emission>
   </animation>
 
   <animation>
     <type>material</type>
     <object-name>lower2</object-name>
-    <condition>
-      <less-than-equals>
-        <property>/sim/time/sun-angle-rad</property>
-        <value>1.50</value>
-      </less-than-equals>
-    </condition>
-    <emission>
-      <red>   0.0 </red>
-      <green> 0.0 </green>
-      <blue>  0.0 </blue>
-    </emission>
-  </animation>
-
-  <animation>
-    <type>material</type>
-    <object-name>roof</object-name>
-    <condition>
-      <greater-than>
-        <property>/sim/time/sun-angle-rad</property>
-        <value>1.5</value>
-      </greater-than>
-    </condition>
-    <emission>
-      <red>   0.1 </red>
-      <green> 0.1 </green>
-      <blue>  0.1 </blue>
-    </emission>
-  </animation>
-
-  <animation>
-    <type>material</type>
-    <object-name>roof</object-name>
     <condition>
       <less-than-equals>
         <property>/sim/time/sun-angle-rad</property>
