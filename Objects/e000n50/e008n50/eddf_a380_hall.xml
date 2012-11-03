@@ -13,7 +13,7 @@
 <condition>		
 <greater-than>		
 <property>/sim/time/sun-angle-rad</property>
-<value>1.57</value>
+<value>1.5</value>
 </greater-than>
 </condition>
 <emission>	
@@ -21,19 +21,6 @@
 <green>0.9</green>	
 <blue>0.8</blue>
 </emission>
-</animation>
-
-<animation>
-    <type>select</type>
-<object-name>groundlight</object-name>
-<object-name>lightcone</object-name>
-<enable-hot type="bool">false</enable-hot>
-<condition>		
-<greater-than>		
-<property>/sim/time/sun-angle-rad</property>
-<value>1.57</value>
-</greater-than>
-</condition>
 </animation>
 
 <animation>
@@ -45,7 +32,7 @@
 <condition>		
 <less-than-equals>		
 <property>/sim/time/sun-angle-rad</property>
-<value>1.57</value>
+<value>1.5</value>
 </less-than-equals>
 </condition>
 <emission>	
@@ -55,5 +42,459 @@
 </emission>
 </animation>
 
+  <animation>
+    <type>material</type>
+    <object-name>lit_surf</object-name>
+    <condition>
+      <greater-than>
+        <property>/sim/time/sun-angle-rad</property>
+        <value>1.5</value>
+      </greater-than>
+    </condition>
+    <emission>
+      <red>   1 </red>
+      <green> 1 </green>
+      <blue>  1 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>lit_surf</object-name>
+    <condition>
+      <less-than-equals>
+        <property>/sim/time/sun-angle-rad</property>
+        <value>1.50</value>
+      </less-than-equals>
+    </condition>
+    <emission>
+      <red>   0.0 </red>
+      <green> 0.0 </green>
+      <blue>  0.0 </blue>
+    </emission>
+  </animation>
+
+      <animation>
+            <type>light</type>
+            <light-type>spot</light-type>
+            <name>LightSrc1</name>
+            <object-name>Cone1</object-name>
+            <nopreview/>
+            <position>
+                  <x>-69.9</x>
+                  <y>-6.7890</y>
+                  <z>43.45</z>
+            </position>
+            <direction>
+                  <x>0</x>
+                  <y>-0.5</y>
+                  <z>-1</z>
+            </direction>
+            <ambient>
+                  <r>0.2</r>
+                  <g>0.2</g>
+                  <b>0.2</b>
+                  <a>1.0</a>
+            </ambient>
+            <diffuse>
+                  <r>0.7</r>
+                  <g>0.7</g>
+                  <b>0.6</b>
+                  <a>1.0</a>
+            </diffuse>
+            <specular>
+                  <r>0.7</r>
+                  <g>0.7</g>
+                  <b>0.7</b>
+                  <a>1.0</a>
+            </specular>
+            <attenuation>
+                  <c>1.0</c>
+                  <l>0.002</l>
+                  <q>0.00005</q>
+            </attenuation>
+            <exponent>0.1</exponent>
+            <cutoff>200</cutoff>
+            <near-m>1</near-m>
+            <far-m>500</far-m>
+      </animation>
+      <animation>
+            <type>light</type>
+            <light-type>spot</light-type>
+            <name>LightSrc2</name>
+            <object-name>Cone2</object-name>
+            <nopreview/>
+            <position>
+                  <x>-49.6</x>
+                  <y>-6.7890</y>
+                  <z>43.45</z>
+            </position>
+            <direction>
+                  <x>0</x>
+                  <y>-0.5</y>
+                  <z>-1</z>
+            </direction>
+            <ambient>
+                  <r>0.2</r>
+                  <g>0.2</g>
+                  <b>0.2</b>
+                  <a>1.0</a>
+            </ambient>
+            <diffuse>
+                  <r>0.7</r>
+                  <g>0.7</g>
+                  <b>0.6</b>
+                  <a>1.0</a>
+            </diffuse>
+            <specular>
+                  <r>0.7</r>
+                  <g>0.7</g>
+                  <b>0.7</b>
+                  <a>1.0</a>
+            </specular>
+            <attenuation>
+                  <c>1.0</c>
+                  <l>0.002</l>
+                  <q>0.00005</q>
+            </attenuation>
+            <exponent>0.1</exponent>
+            <cutoff>200</cutoff>
+            <near-m>1</near-m>
+            <far-m>500</far-m>
+      </animation>
+      <animation>
+            <type>light</type>
+            <light-type>spot</light-type>
+            <name>LightSrc3</name>
+            <object-name>Cone3</object-name>
+            <nopreview/>
+            <position>
+                  <x>-29.9</x>
+                  <y>-6.7890</y>
+                  <z>43.45</z>
+            </position>
+            <direction>
+                  <x>0</x>
+                  <y>-0.5</y>
+                  <z>-1</z>
+            </direction>
+            <ambient>
+                  <r>0.2</r>
+                  <g>0.2</g>
+                  <b>0.2</b>
+                  <a>1.0</a>
+            </ambient>
+            <diffuse>
+                  <r>0.7</r>
+                  <g>0.7</g>
+                  <b>0.6</b>
+                  <a>1.0</a>
+            </diffuse>
+            <specular>
+                  <r>0.7</r>
+                  <g>0.7</g>
+                  <b>0.7</b>
+                  <a>1.0</a>
+            </specular>
+            <attenuation>
+                  <c>1.0</c>
+                  <l>0.002</l>
+                  <q>0.00005</q>
+            </attenuation>
+            <exponent>0.1</exponent>
+            <cutoff>200</cutoff>
+            <near-m>1</near-m>
+            <far-m>500</far-m>
+      </animation>
+      <animation>
+            <type>light</type>
+            <light-type>spot</light-type>
+            <name>LightSrc4</name>
+            <object-name>Cone4</object-name>
+            <nopreview/>
+            <position>
+                  <x>-9.9</x>
+                  <y>-6.7890</y>
+                  <z>43.45</z>
+            </position>
+            <direction>
+                  <x>0</x>
+                  <y>-0.5</y>
+                  <z>-1</z>
+            </direction>
+            <ambient>
+                  <r>0.2</r>
+                  <g>0.2</g>
+                  <b>0.2</b>
+                  <a>1.0</a>
+            </ambient>
+            <diffuse>
+                  <r>0.7</r>
+                  <g>0.7</g>
+                  <b>0.6</b>
+                  <a>1.0</a>
+            </diffuse>
+            <specular>
+                  <r>0.7</r>
+                  <g>0.7</g>
+                  <b>0.7</b>
+                  <a>1.0</a>
+            </specular>
+            <attenuation>
+                  <c>1.0</c>
+                  <l>0.002</l>
+                  <q>0.00005</q>
+            </attenuation>
+            <exponent>0.1</exponent>
+            <cutoff>200</cutoff>
+            <near-m>1</near-m>
+            <far-m>500</far-m>
+      </animation>
+      <animation>
+            <type>light</type>
+            <light-type>spot</light-type>
+            <name>LightSrc5</name>
+            <object-name>Cone5</object-name>
+            <nopreview/>
+            <position>
+                  <x>5</x>
+                  <y>-6.7890</y>
+                  <z>43.45</z>
+            </position>
+            <direction>
+                  <x>0</x>
+                  <y>-0.5</y>
+                  <z>-1</z>
+            </direction>
+            <ambient>
+                  <r>0.2</r>
+                  <g>0.2</g>
+                  <b>0.2</b>
+                  <a>1.0</a>
+            </ambient>
+            <diffuse>
+                  <r>0.7</r>
+                  <g>0.7</g>
+                  <b>0.6</b>
+                  <a>1.0</a>
+            </diffuse>
+            <specular>
+                  <r>0.7</r>
+                  <g>0.7</g>
+                  <b>0.7</b>
+                  <a>1.0</a>
+            </specular>
+            <attenuation>
+                  <c>1.0</c>
+                  <l>0.002</l>
+                  <q>0.00005</q>
+            </attenuation>
+            <exponent>0.1</exponent>
+            <cutoff>200</cutoff>
+            <near-m>1</near-m>
+            <far-m>500</far-m>
+      </animation>
+      <animation>
+            <type>light</type>
+            <light-type>spot</light-type>
+            <name>LightSrc6</name>
+            <object-name>Cone6</object-name>
+            <nopreview/>
+            <position>
+                  <x>19.9</x>
+                  <y>-6.7890</y>
+                  <z>43.45</z>
+            </position>
+            <direction>
+                  <x>0</x>
+                  <y>-0.5</y>
+                  <z>-1</z>
+            </direction>
+            <ambient>
+                  <r>0.2</r>
+                  <g>0.2</g>
+                  <b>0.2</b>
+                  <a>1.0</a>
+            </ambient>
+            <diffuse>
+                  <r>0.7</r>
+                  <g>0.7</g>
+                  <b>0.6</b>
+                  <a>1.0</a>
+            </diffuse>
+            <specular>
+                  <r>0.7</r>
+                  <g>0.7</g>
+                  <b>0.7</b>
+                  <a>1.0</a>
+            </specular>
+            <attenuation>
+                  <c>1.0</c>
+                  <l>0.002</l>
+                  <q>0.00005</q>
+            </attenuation>
+            <exponent>0.1</exponent>
+            <cutoff>200</cutoff>
+            <near-m>1</near-m>
+            <far-m>500</far-m>
+      </animation>
+      <animation>
+            <type>light</type>
+            <light-type>spot</light-type>
+            <name>LightSrc7</name>
+            <object-name>Cone7</object-name>
+            <nopreview/>
+            <position>
+                  <x>40</x>
+                  <y>-6.7890</y>
+                  <z>43.45</z>
+            </position>
+            <direction>
+                  <x>0</x>
+                  <y>-0.5</y>
+                  <z>-1</z>
+            </direction>
+            <ambient>
+                  <r>0.2</r>
+                  <g>0.2</g>
+                  <b>0.2</b>
+                  <a>1.0</a>
+            </ambient>
+            <diffuse>
+                  <r>0.7</r>
+                  <g>0.7</g>
+                  <b>0.6</b>
+                  <a>1.0</a>
+            </diffuse>
+            <specular>
+                  <r>0.7</r>
+                  <g>0.7</g>
+                  <b>0.7</b>
+                  <a>1.0</a>
+            </specular>
+            <attenuation>
+                  <c>1.0</c>
+                  <l>0.002</l>
+                  <q>0.00005</q>
+            </attenuation>
+            <exponent>0.1</exponent>
+            <cutoff>200</cutoff>
+            <near-m>1</near-m>
+            <far-m>500</far-m>
+      </animation>
+      <animation>
+            <type>light</type>
+            <light-type>spot</light-type>
+            <name>LightSrc8</name>
+            <object-name>Cone8</object-name>
+            <nopreview/>
+            <position>
+                  <x>60</x>
+                  <y>-6.7890</y>
+                  <z>43.45</z>
+            </position>
+            <direction>
+                  <x>0</x>
+                  <y>-0.5</y>
+                  <z>-1</z>
+            </direction>
+            <ambient>
+                  <r>0.2</r>
+                  <g>0.2</g>
+                  <b>0.2</b>
+                  <a>1.0</a>
+            </ambient>
+            <diffuse>
+                  <r>0.7</r>
+                  <g>0.7</g>
+                  <b>0.6</b>
+                  <a>1.0</a>
+            </diffuse>
+            <specular>
+                  <r>0.7</r>
+                  <g>0.7</g>
+                  <b>0.7</b>
+                  <a>1.0</a>
+            </specular>
+            <attenuation>
+                  <c>1.0</c>
+                  <l>0.002</l>
+                  <q>0.00005</q>
+            </attenuation>
+            <exponent>0.1</exponent>
+            <cutoff>200</cutoff>
+            <near-m>1</near-m>
+            <far-m>500</far-m>
+      </animation>
+      <animation>
+            <type>light</type>
+            <light-type>spot</light-type>
+            <name>LightSrc9</name>
+            <object-name>Cone9</object-name>
+            <nopreview/>
+            <position>
+                  <x>80</x>
+                  <y>-6.7890</y>
+                  <z>43.45</z>
+            </position>
+            <direction>
+                  <x>0</x>
+                  <y>-0.5</y>
+                  <z>-1</z>
+            </direction>
+            <ambient>
+                  <r>0.2</r>
+                  <g>0.2</g>
+                  <b>0.2</b>
+                  <a>1.0</a>
+            </ambient>
+            <diffuse>
+                  <r>0.7</r>
+                  <g>0.7</g>
+                  <b>0.6</b>
+                  <a>1.0</a>
+            </diffuse>
+            <specular>
+                  <r>0.7</r>
+                  <g>0.7</g>
+                  <b>0.7</b>
+                  <a>1.0</a>
+            </specular>
+            <attenuation>
+                  <c>1.0</c>
+                  <l>0.002</l>
+                  <q>0.00005</q>
+            </attenuation>
+            <exponent>0.1</exponent>
+            <cutoff>200</cutoff>
+            <near-m>1</near-m>
+            <far-m>500</far-m>
+      </animation>
+
+      <animation>
+            <type>select</type>
+            <object-name>LightSrc1</object-name>
+            <object-name>LightSrc2</object-name>
+            <object-name>LightSrc3</object-name>
+            <object-name>LightSrc4</object-name>
+            <object-name>LightSrc5</object-name>
+            <object-name>LightSrc6</object-name>
+            <object-name>LightSrc7</object-name>
+            <object-name>LightSrc8</object-name>
+            <object-name>LightSrc9</object-name>
+            <condition>
+                  <and>
+                        <property>/sim/rendering/rembrandt/enabled</property>
+                        <greater-than>
+                              <property>/sim/rendering/shaders/lights</property>
+                              <value>0</value>
+                        </greater-than>
+                        <greater-than>
+                              <property>/sim/time/sun-angle-rad</property>
+                              <value>1.50</value>
+                        </greater-than>
+                  </and>
+            </condition>
+      </animation>
 
 </PropertyList>

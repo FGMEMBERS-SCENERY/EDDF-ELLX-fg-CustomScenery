@@ -2,7 +2,7 @@
 
 <PropertyList>
 
-  <path>apronv20_lightpole.ac</path>
+  <path>eddf_lamp_t2.ac</path>
 
   <animation>
     <type>material</type>
@@ -43,13 +43,13 @@
             <object-name>Cone</object-name>
             <nopreview/>
             <position>
-                  <x>0.634</x>
-                  <y>0</y>
-                  <z>19</z>
+                  <x>-0.372</x>
+                  <y>-1.6</y>
+                  <z>28.3</z>
             </position>
             <direction>
                   <x>0</x>
-                  <y>0</y>
+                  <y>-0.5</y>
                   <z>-1</z>
             </direction>
             <ambient>
@@ -98,6 +98,5 @@
                   </and>
             </condition>
       </animation>
-
 </PropertyList>
 
