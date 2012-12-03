@@ -13,7 +13,7 @@ OBJECT_STATIC ELLX_rtower.ac 6.1943126 49.625362 359.2 0
 #ILW
 OBJECT_SHARED Models/Communications/vordme_1.xml 6.233056 49.633056 368.59 180
 #LUX
-OBJECT_SHARED Models/Communications/vordme_1.xml 6.247222 49.639444 360.26 180
+OBJECT_SHARED Models/Communications/vordme_1.xml 6.247222 49.639444 356.0 180
 #LE
 OBJECT_SHARED Models/Airport/ndb.xml 6.248333 49.640278 347.84 80
 OBJECT_SHARED Models/Industrial/generic_chimney_01.xml 6.135 49.656667 -191 180

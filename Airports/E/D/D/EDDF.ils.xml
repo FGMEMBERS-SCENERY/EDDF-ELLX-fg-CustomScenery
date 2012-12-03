@@ -2,20 +2,40 @@
 <PropertyList>
   <runway>
     <ils>
-      <lon>8.59154700000001</lon>
-      <lat>50.046217</lat>
+      <lon>8.497078</lon>
+      <lat>50.037054</lat>
       <rwy>07L</rwy>
       <hdg-deg>69.61</hdg-deg>
       <elev-m>110.95</elev-m>
       <nav-id>IFNE</nav-id>
+      <freq-mhz>111.75</freq-mhz>
     </ils>
     <ils>
-      <lon>8.53079400000001</lon>
-      <lat>50.0317</lat>
+      <lon>8.5333716</lon>
+      <lat>50.045825</lat>
       <rwy>25R</rwy>
       <hdg-deg>249.57</hdg-deg>
       <elev-m>100.28</elev-m>
       <nav-id>IFNW</nav-id>
+      <freq-mhz>111.35</freq-mhz>
+    </ils>
+    <ils>
+      <lon>8.59154700000001</lon>
+      <lat>50.046217</lat>
+      <rwy>07C</rwy>
+      <hdg-deg>69.61</hdg-deg>
+      <elev-m>110.95</elev-m>
+      <nav-id>IFCE</nav-id>
+      <freq-mhz>110.55</freq-mhz>
+    </ils>
+    <ils>
+      <lon>8.53079400000001</lon>
+      <lat>50.0317</lat>
+      <rwy>25C</rwy>
+      <hdg-deg>249.57</hdg-deg>
+      <elev-m>100.28</elev-m>
+      <nav-id>IFCW</nav-id>
+      <freq-mhz>109.5</freq-mhz>
     </ils>
   </runway>
   <runway>
@@ -26,7 +46,7 @@
       <hdg-deg>69.62</hdg-deg>
       <elev-m>110.34</elev-m>
       <nav-id>IFSE</nav-id>
-      <freq-mhz>111.95</freq-mhz>
+      <freq-mhz>110.95</freq-mhz>
     </ils>
     <ils>
       <lon>8.53075000000001</lon>
@@ -35,6 +55,7 @@
       <hdg-deg>249.57</hdg-deg>
       <elev-m>99.97</elev-m>
       <nav-id>IFSW</nav-id>
+      <freq-mhz>110.70</freq-mhz>
     </ils>
   </runway>
 </PropertyList>
