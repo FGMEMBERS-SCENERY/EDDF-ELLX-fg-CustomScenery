@@ -4,6 +4,11 @@
 
   <path>ELLX_termA.ac</path>
 
+  <animation>
+    <object-name>lighting</object-name>
+    <enable-hot type="bool">false</enable-hot>
+  </animation>
+
   <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>window_1</object-name>

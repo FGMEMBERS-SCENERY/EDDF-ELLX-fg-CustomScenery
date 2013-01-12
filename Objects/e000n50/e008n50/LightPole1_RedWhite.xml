@@ -2,6 +2,11 @@
 
 <PropertyList>
 
+  <animation>
+    <object-name>Cone</object-name>
+    <enable-hot type="bool">false</enable-hot>
+  </animation>
+
  <path>LightPole1_RedWhite.ac</path>
   <animation>
     <type>material</type>

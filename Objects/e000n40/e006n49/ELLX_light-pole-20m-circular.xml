@@ -2,7 +2,12 @@
 
 <PropertyList>
 
-	<path>ELLX_lightpole.ac</path>
+  <path>ELLX_lightpole.ac</path>
+
+  <animation>
+    <object-name>Cone</object-name>
+    <enable-hot type="bool">false</enable-hot>
+  </animation>
 
   <animation>
     <type>material</type>

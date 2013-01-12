@@ -5,6 +5,11 @@
   <path>eddf_lamp_t2.ac</path>
 
   <animation>
+    <object-name>Cone</object-name>
+    <enable-hot type="bool">false</enable-hot>
+  </animation>
+
+  <animation>
     <type>material</type>
     <object-name>lit_surf</object-name>
     <condition>
